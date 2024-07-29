@@ -20,7 +20,7 @@ async function getAsset(id: String) {
 }
 
 
-class AssetComponent extends Component<{assetId: string}, { assetId: string, asset: Asset, error: any, loading: boolean }> {
+class AssetComponent extends Component<{assetId: string}, { assetId: string, asset: Asset | null, error: any, loading: boolean }> {
   constructor(props: {assetId: string}) {
     super(props);
     this.state = {
@@ -51,6 +51,9 @@ class AssetComponent extends Component<{assetId: string}, { assetId: string, ass
       return <div>Error: {error.message}</div>;
     }
 
+    if( asset == null){
+      return null;
+    }
     return (
       <div>
         <div>
