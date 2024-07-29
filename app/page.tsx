@@ -23,9 +23,8 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+function App() {
+  return <RouterProvider router={router} />;
+}
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
-);
+export default App;

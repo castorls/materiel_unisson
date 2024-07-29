@@ -1,4 +1,4 @@
-export async function getAsset(id) { 
+export async function getAsset(id: String) { 
   const asset = {
     id: id,
     last: "Name",
