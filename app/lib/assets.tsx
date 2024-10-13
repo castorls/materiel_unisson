@@ -71,7 +71,7 @@ class AssetComponent extends Component<{assetId: string}, { assetId: string, ass
             </div>
             <br/>
             <div>
-              Vous avez scanne l'asset ID : {asset.id}
+              Vous avez scanné l'asset ID : {asset.id}
             </div>
             <br />
         <a href={`${asset.baseURL}/${asset.id}`}>CLIQUER ICI POUR SUIVRE LE LIEN VERS L'ASSET SNIPE IT</a>
