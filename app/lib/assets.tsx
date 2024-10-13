@@ -59,11 +59,11 @@ class AssetComponent extends Component<{assetId: string}, { assetId: string, ass
 
             <div>
                 ========= DISCLAIMER ========= <br />
-                Cette page est une version en développement de l'application de gestion du matériel Unisson.
+                Cette page est une version en développement de l&apos;application de gestion du matériel Unisson.
                 <br />
-                Cette version permet l'étiquetage du matériel et un renvoi vers sa page snipe-it.
+                Cette version permet l&apos;étiquetage du matériel et un renvoi vers sa page snipe-it.
                 <br />
-                Le développement de l'affichage via cette surcouche se fera en 2025.
+                Le développement de l&apos;affichage via cette surcouche se fera en 2025.
                 <br />
                 Contacts : Jonathan F. / Ludovic S.
                 <br />
@@ -71,10 +71,10 @@ class AssetComponent extends Component<{assetId: string}, { assetId: string, ass
             </div>
             <br/>
             <div>
-              Vous avez scanné l'asset ID : {asset.id}
+              Vous avez scanné l&apos;asset ID : {asset.id}
             </div>
             <br />
-        <a href={`${asset.baseURL}/${asset.id}`}>CLIQUER ICI POUR SUIVRE LE LIEN VERS L'ASSET SNIPE IT</a>
+        <a href={`${asset.baseURL}/${asset.id}`}>CLIQUER ICI POUR SUIVRE LE LIEN VERS L&apos;ASSET SNIPE IT</a>
       </div>
     );
   }
