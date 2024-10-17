@@ -80,4 +80,70 @@ class AssetComponent extends Component<{assetId: string}, { assetId: string, ass
   }
 }
 
+/* restylage à l'arrache*/
+
+const styles = {
+    container: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center' as 'center',
+        padding: '20px',
+        fontFamily: 'Arial, sans-serif',
+        color: '#333',
+        backgroundColor: '#f7f7f7',
+        borderRadius: '10px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        maxWidth: '600px',
+        margin: '0 auto',
+    },
+    logo: {
+        width: '150px',
+        marginBottom: '20px',
+    },
+    wipImage: {
+        width: '225px',
+        marginBottom: '20px',
+    },
+    infoBox: {
+        backgroundColor: '#fff',
+        padding: '20px',
+        borderRadius: '8px',
+        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+        marginBottom: '20px',
+        width: '100%',
+    },
+    infoText: {
+        fontSize: '16px',
+        marginBottom: '10px',
+    },
+    assetInfo: {
+        fontSize: '18px',
+        fontWeight: 'bold' as 'bold',
+        marginBottom: '10px',
+    },
+    button: {
+        display: 'inline-block',
+        padding: '10px 20px',
+        backgroundColor: '#4CAF50',
+        color: '#fff',
+        textDecoration: 'none',
+        borderRadius: '5px',
+        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+        transition: 'background-color 0.3s',
+    },
+    footer: {
+        backgroundColor: '#fff',
+        padding: '20px',
+        borderRadius: '8px',
+        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+        width: '100%',
+    },
+    separator: {
+        fontSize: '14px',
+        color: '#999',
+        marginBottom: '10px',
+    },
+};
+
 export default AssetComponent;
