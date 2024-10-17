@@ -1,6 +1,7 @@
 "use client"; // This is a client component 👈🏽
 
 import React, { Component } from 'react';
+import wipIcon from '../../Icon/WIP.png';
 
 type Asset = {
   id: String,
@@ -55,27 +56,55 @@ class AssetComponent extends Component<{assetId: string}, { assetId: string, ass
       return null;
     }
     return (
-        <div>
+        <div style={styles.container}>
+            {/* Logo */}
+            <img
+                src="https://i.postimg.cc/d02NfQDz/logounisson.png"
+                alt="Eglise Unisson"
+                style={styles.logo}
+            />
 
-            <div>
-                ========= DISCLAIMER ========= <br />
-                Cette page est une version en développement de l&apos;application de gestion du matériel Unisson.
-                <br />
-                Cette version permet l&apos;étiquetage du matériel et un renvoi vers sa page snipe-it.
-                <br />
-                Le développement de l&apos;affichage via cette surcouche se fera en 2025.
-                <br />
-                Contacts : Jonathan F. / Ludovic S.
-                <br />
-                ============================== <br />
+            {/* WIP Image */}
+            <img
+                src="https://i.postimg.cc/kXvsQY6y/WIP.png"
+                alt="WORK IN PROGRESS"
+                style={styles.wipImage}
+            />
+
+            {/* Information Section */}
+            <div style={styles.infoBox}>
+                <p style={styles.infoText}>
+                    Version mobile en cours de développement.<br />Pour visualiser l&apos;article, cliquez sur la version Web.
+                </p>
+
+                {/* Asset Information */}
+                <div style={styles.assetInfo}>
+                    <strong>Vous avez scanné l&apos;article ID : {asset.id}</strong>
+                </div>
+
+                {/* Button Link */}
+                <a
+                    href={`${asset.baseURL}/${asset.id}`}
+                    style={styles.button}
+                >
+                    Cliquez ici pour visualiser la version Web
+                </a>
             </div>
-            <br/>
-            <div>
-              Vous avez scanné l&apos;asset ID : {asset.id}
+
+            {/* Footer Information */}
+            <div style={styles.footer}>
+                <strong><div style={styles.separator}>INFORMATION</div></strong>
+                <p><strong>V0.1</strong> de l&apos;application de gestion du parc matériel de l&apos;église Unisson.</p><br/>
+                <p>
+                    Cette version a pour but de recenser l&apos;ensemble du matériel et de faire le lien vers sa page produit <b><i>assets.egliseunisson.fr</i></b>.<br />
+                    Pour vous logger à cette application en suivant le lien ce-dessus, vous devez préalablement avoir reçu une invitation par mail.<br />
+                </p><br />
+                <p>
+                    <strong>Contacts : Jonathan F. / Ludovic S.</strong><br /><br />
+                </p>
+                <strong>A venir :</strong> l&apos;affiche des caractéristiques du matériel scanné se fera directement depuis cette page courant <strong>2025</strong>.
             </div>
-            <br />
-        <a href={`${asset.baseURL}/${asset.id}`}>CLIQUER ICI POUR SUIVRE LE LIEN VERS L&apos;ASSET SNIPE IT</a>
-      </div>
+        </div>
     );
   }
 }
@@ -102,7 +131,7 @@ const styles = {
         marginBottom: '20px',
     },
     wipImage: {
-        width: '225px',
+        width: '300px',
         marginBottom: '20px',
     },
     infoBox: {
