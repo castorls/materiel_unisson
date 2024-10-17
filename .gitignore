@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+/.vs/materiel_unisson/FileContentIndex
+/.vs/materiel_unisson/v16
+/.vs/materiel_unisson/v17
+/.vs
