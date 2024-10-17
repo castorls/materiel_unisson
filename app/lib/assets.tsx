@@ -131,7 +131,7 @@ const styles = {
         marginBottom: '20px',
     },
     wipImage: {
-        width: '300px',
+        width: '225px',
         marginBottom: '20px',
     },
     infoBox: {
