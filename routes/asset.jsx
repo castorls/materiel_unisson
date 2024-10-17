@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import { getAsset } from "../app/assets";
+import { getAsset } from "../app/lib/assets";
 
 export async function loader({ params }) {
   const asset = await getAsset(params.assetId);
