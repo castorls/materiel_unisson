@@ -56,7 +56,7 @@ class AssetComponent extends Component<{assetId: string}, { assetId: string, ass
       return null;
     }
     return (
-        <div style={styles.container}>
+        <div style={styles.container as React.CSSProperties}>
             {/* Logo */}
             <img
                 src="https://i.postimg.cc/d02NfQDz/logounisson.png"
