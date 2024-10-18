@@ -97,7 +97,7 @@ class AssetComponent extends Component<{assetId: string}, { assetId: string, ass
                 <p><strong>V0.1</strong> de l&apos;application de gestion du parc matériel de l&apos;église Unisson.</p><br/>
                 <p>
                     Cette version a pour but de recenser l&apos;ensemble du matériel et de faire le lien vers sa page produit <b><i>assets.egliseunisson.fr</i></b>.<br />
-                    Pour vous logger à cette application en suivant le lien ce-dessus, vous devez préalablement avoir reçu une invitation par mail.<br />
+                    Pour vous logger à cette application en suivant le lien ci-dessus, vous devez préalablement avoir reçu une invitation par mail.<br />
                 </p><br />
                 <p>
                     <strong>Contacts : Jonathan F. / Ludovic S.</strong><br /><br />
