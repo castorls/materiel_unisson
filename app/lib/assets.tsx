@@ -102,7 +102,7 @@ class AssetComponent extends Component<{assetId: string}, { assetId: string, ass
                 <p>
                     <strong>Contacts : Jonathan F. / Ludovic S.</strong><br /><br />
                 </p>
-                <strong>A venir :</strong> l&apos;affiche des caractéristiques du matériel scanné se fera directement depuis cette page courant <strong>2025</strong>.
+                <strong>A venir :</strong> l&apos;affichage des caractéristiques du matériel scanné se fera directement depuis cette page courant <strong>2025</strong>.
             </div>
         </div>
     );
